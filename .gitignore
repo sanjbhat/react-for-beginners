@@ -1,0 +1,8 @@
+node_modules/
+stepped-solutions/
+*.zip
+.DS_Store
+.idea
+notes.md
+catch-of-the-day/build/
+catch-of-the-day/node-modules

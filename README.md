@@ -11,6 +11,6 @@ npm install
 npm start
 ```
 Pre-requisites : Node and babel.
-
+If you have set up babel properly with FileWatcher, then any change(save of the code) will automatically reflect in the browser, no need to build again.
 
 

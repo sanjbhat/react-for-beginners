@@ -6,6 +6,7 @@ class Fish extends React.Component {
     const fishKey = this.props.index;
     this.props.addToOrder(fishKey);
   };
+
   render() {
     const fish = this.props.details;
     const isAvailable = fish.status === "available";

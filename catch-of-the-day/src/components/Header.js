@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 
 // function Header(props)
 // {
@@ -21,18 +21,19 @@ import React from "react";
 
 //or the arrow method
 const Header = (props) => (
-            <header className="top">
-            <h1>Catch
-                <span className="ofThe">
-                    <span className="of">OF</span>
-                    <span className="the">The</span>
-                </span>
-                Day
-            </h1>
-            <h3 className="tagline">
-                <span>{props.tagline }</span>
-            </h3>
-        </header>
+  <header className="top">
+    <h1>
+      Catch
+      <span className="ofThe">
+        <span className="of">OF</span>
+        <span className="the">The</span>
+      </span>
+      Day
+    </h1>
+    <h3 className="tagline">
+      <span>{props.tagline}</span>
+    </h3>
+  </header>
 );
 // class Header extends React.Component {
 //     render() {
@@ -54,5 +55,7 @@ const Header = (props) => (
 //     }
 //
 // }
-
+Header.propTypes = {
+  tagline: PropTypes.string.isRequired,
+};
 export default Header;

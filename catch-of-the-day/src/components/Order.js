@@ -52,7 +52,7 @@ class Order extends React.Component {
                   key={count}
                   timeout={{ enter: 500, exit: 500 }}
                 >
-                  <span className="count">{count}</span>
+                  <span>{count}</span>
                 </CSSTransition>
               </TransitionGroup>
               kg {fish.name}

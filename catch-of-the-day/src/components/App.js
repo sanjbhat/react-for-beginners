@@ -7,6 +7,7 @@ import Fish from "./Fish";
 import base from "../base";
 
 class App extends React.Component {
+  static propTypes = {};
   state = {
     fishes: {},
     order: {},

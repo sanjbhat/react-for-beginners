@@ -1,8 +1,21 @@
 import React from "react";
 import { formatPrice } from "../helpers";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import PropTypes from "prop-types";
 
 class Order extends React.Component {
+  static propTypes = {
+    fishes: PropTypes.shape({
+      name: PropTypes.string,
+      image: PropTypes.string,
+      desc: PropTypes.string,
+      status: PropTypes.string,
+      price: PropTypes.number,
+    }),
+    count: PropTypes.string,
+    deleteFromOrder: PropTypes.func,
+    order: PropTypes.object,
+  };
   getTotal = (orderIds) => {
     return orderIds.reduce((prevTotal, key) => {
       const fish = this.props.fishes[key];

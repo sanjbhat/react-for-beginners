@@ -12,11 +12,11 @@ const firebaseConfig = {
   appId: "1:432081187019:web:ed8f2db98ea73f12276b4e",
 };
 
-const fireBasApp = firebase.initializeApp(firebaseConfig);
+const fireBaseApp = firebase.initializeApp(firebaseConfig);
 
-const base = Rebase.createClass(fireBasApp.database());
+const base = Rebase.createClass(fireBaseApp.database());
 
 //this is a named export
-export { fireBasApp };
+export { fireBaseApp };
 
 export default base;

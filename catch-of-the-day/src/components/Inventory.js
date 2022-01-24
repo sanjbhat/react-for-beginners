@@ -27,6 +27,15 @@ class Inventory extends React.Component {
     uid: null,
   };
 
+  //Even when the page is refreshed, we want to retain the authenticated user and data
+  componentDidMount() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.authHandler({ user: user });
+      }
+    });
+  }
+
   authHandler = async (authData) => {
     //1.lookup the current store in the firebase database
 
